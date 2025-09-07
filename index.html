@@ -1070,48 +1070,7 @@
                     <a href="https://wa.me/23059660525" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     <a href="tel:+23059660525"><i class="fas fa-phone"></i></a>
                 </div>
-            </div>
-            <div class="form-group">
-    <input type="tel" id="phone" class="form-input" placeholder="Your Phone" required>
-</div>
-<div class="form-group">
-    <select id="service" class="form-input" required>
-        <option value="" disabled selected>Select Service</option>
-        <option value="Non Bridal Makeup (Rs 3000)">Non Bridal Makeup (Rs 3000)</option>
-        <option value="Hijab Styling (Rs 4000)">Hijab Styling (Rs 4000)</option>
-        <option value="Hairstyle (Rs 800)">Hairstyle (Rs 800)</option>
-        <option value="Makeup + Hairstyle Combo (Rs 3500)">Makeup + Hairstyle Combo (Rs 3500)</option>
-        <option value="Bridal Haute Coiffure (Rs 1500)">Bridal Haute Coiffure (Rs 1500)</option>
-        <option value="Bridal Makeup + Hairstyle (Rs 6300)">Bridal Makeup + Hairstyle (Rs 6300)</option>
-    </select>
-</div>
-<div class="form-group">
-    <textarea id="message" class="form-input" placeholder="Your Message" required></textarea>
-</div>
-
-<!-- WhatsApp Button -->
-<button type="button" class="submit-btn" onclick="sendToWhatsApp()">Send Booking Request</button>
-
-<script>
-function sendToWhatsApp() {
-    let phone = document.getElementById("phone").value;
-    let service = document.getElementById("service").value;
-    let message = document.getElementById("message").value;
-
-    if (phone && service && message) {
-        let url = "https://wa.me/23059660525?text=" 
-            + "*New Booking Request - Make-Up By Sharfaa*%0A"
-            + "📞 Phone: " + phone + "%0A"
-            + "💄 Service: " + service + "%0A"
-            + "📝 Message: " + message;
-
-        window.open(url, '_blank').focus();
-    } else {
-        alert("⚠️ Please fill out all fields before sending.");
-    }
-}
-</script>
-
+        
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1221,6 +1180,7 @@ function sendToWhatsApp() {
 </body>
 
 </html>
+
 
 
 
